@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+<title>Essai DHTML</title>
+<meta charset="UTF-8">
+<script type="text/javascript" charset="UTF-8"></script>
+<script>
+	 let ul = document.getElementsByTagName("ul");
+    let li = document.getElementsByTagName("li");
+
+    function change_liste()
+    {
+    ul[0].setAttribute('type', 'circle')
+    for(let i =0; i <li.length;i++)
+       {
+        li[i].innerHTML="blahblahblah"
+       }
+    }
+	
+</script>
+
+</head>
+<body onclick=" change_liste()">
+
+<ul>
+	<li>a</li>
+	<li>b</li>
+	<li>c</li>
+	<li>d</li>
+	<li>e</li>
+	<li>f</li>
+	<li>g</li>
+	<li>h</li>	
+</ul>
+
+</body>
+</html>

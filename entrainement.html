@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <title>TCHAT</title>
+        <meta charset="utf-8"  />
+        <h1> Mon excercice Js </h1>
+</head>
+<body >
+<input type="text" id="texte" >
+<input onclick ='add()' type="submit" id="btn" name="Add">
+
+    <ul id="liste">
+        <li>Jambon</li>
+        <li>Oeufs</li>
+        <li>Boeuf</li>
+        <li>Citron</li>
+     
+    </ul>
+    
+    </body>
+    <script >
+  
+   
+
+        function add()
+            {
+    
+       let ecrire = document.getElementsByTagName("texte").value;
+        let ul = document.getElementsByTagName("liste");
+        let addlist = document.createElement("li");
+        let textadd = document.createTextNode(ecrire);
+        let resultat = addlist.appendChild(textadd);
+        let listfinale = ul.appendChild(addlist)	
+            
+            }
+        
+    </script>
+    </html>
